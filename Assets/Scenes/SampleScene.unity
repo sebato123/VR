@@ -12605,7 +12605,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4.0997056e-19, y: 2.2e-44, z: -2.4405384e-30, w: -3.1740352e-38}
+  m_BoundingSphereOverride: {x: 6.42848e-40, y: 2.7367045e-38, z: 5.09687e-39, w: NaN}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -15994,13 +15994,29 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 817075156}
     m_Modifications:
+    - target: {fileID: 4086216048105752726, guid: 0122d77c664b5ff48bd7cf2cb50055d5, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 2720855431947401165}
+    - target: {fileID: 4086216048105752726, guid: 0122d77c664b5ff48bd7cf2cb50055d5, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: Fire
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086216048105752726, guid: 0122d77c664b5ff48bd7cf2cb50055d5, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: GunVR, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4086216048105752726, guid: 0122d77c664b5ff48bd7cf2cb50055d5, type: 3}
+      propertyPath: m_Activated.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7143822915248535092, guid: 0122d77c664b5ff48bd7cf2cb50055d5, type: 3}
       propertyPath: m_Name
       value: Pistola
       objectReference: {fileID: 0}
     - target: {fileID: 8499028282146976691, guid: 0122d77c664b5ff48bd7cf2cb50055d5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.607
+      value: 1.758
       objectReference: {fileID: 0}
     - target: {fileID: 8499028282146976691, guid: 0122d77c664b5ff48bd7cf2cb50055d5, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16008,7 +16024,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8499028282146976691, guid: 0122d77c664b5ff48bd7cf2cb50055d5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.162
+      value: -0.312
       objectReference: {fileID: 0}
     - target: {fileID: 8499028282146976691, guid: 0122d77c664b5ff48bd7cf2cb50055d5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16378,6 +16394,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8499028282146976691, guid: 0122d77c664b5ff48bd7cf2cb50055d5, type: 3}
   m_PrefabInstance: {fileID: 1169953638687356104}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2720855431947401165 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8698832016044135247, guid: 0122d77c664b5ff48bd7cf2cb50055d5, type: 3}
+  m_PrefabInstance: {fileID: 1169953638687356104}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b44fa99b854e6a240a60a510f30048fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2779669268269126897
 PrefabInstance:
   m_ObjectHideFlags: 0
