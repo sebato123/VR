@@ -6,19 +6,15 @@ public class Projectile : MonoBehaviour
 {
     [Header("Daño / Comportamiento")]
     public float damage = 10f;
-
-    private Rigidbody rb;
     private Collider col;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
+      
         col = GetComponent<Collider>();
 
         // Asegurar buena detección de colisiones
-        rb.collisionDetectionMode = CollisionDetectionMode.ContinuousDynamic;
-        rb.interpolation = RigidbodyInterpolation.Interpolate;
-
+       
         
         col.isTrigger = false;
     }
@@ -39,6 +35,6 @@ public class Projectile : MonoBehaviour
         }
 
         // Destruir el proyectil al chocar con algo
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }
