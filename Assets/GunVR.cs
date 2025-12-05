@@ -42,7 +42,13 @@ public class GunVR : MonoBehaviour
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
         if (rb != null)
         {
-            rb.velocity = shootingPoint.forward * projectileSpeed;
+            Vector3 dir = shootingPoint.forward;
+            // rb.velocity = dir * projectileSpeed;
+
+             rb.AddForce(dir * projectileSpeed, ForceMode.VelocityChange);
+
+            // rb.rotation = shootingPoint.rotation;
+            // rb.velocity = shootingPoint * projectileSpeed;
         }
         else
         {

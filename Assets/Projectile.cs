@@ -34,6 +34,17 @@ public class Projectile : MonoBehaviour
             destructible.Break(hitPoint);
         }
 
+        if (CompareTag("Bullet") && collision.gameObject.CompareTag("Player"))
+        {
+            Collider myCol = GetComponent<Collider>();
+            Collider otherCol = collision.collider;
+
+            if (myCol != null && otherCol != null)
+            {
+                Physics.IgnoreCollision(myCol, otherCol, true);
+            }
+        }
+
         // Destruir el proyectil al chocar con algo
         //Destroy(gameObject);
     }
